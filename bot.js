@@ -33,7 +33,7 @@ client.on('ready', () => {
   client.on('ready', async () => {
       let ToRnEdO  = ["is","this","spam"]
   setInterval(() => {
-client.channels.get("504015425672314880").send(`${ToRnEdO [Math.floor(Math.random() *ToRnEdO .length)]}`)
+client.channels.get("506147653248221204").send(`${ToRnEdO [Math.floor(Math.random() *ToRnEdO .length)]}`)
 },500);
 });
   
