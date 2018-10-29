@@ -97,5 +97,20 @@ client.on('message', message => {
 });
 
 
+  client.on('message', message => {
+  if (!message.guild) return;
+ 
+  if (message.content === '1join') {
+    if (message.member.voiceChannel) {
+      message.member.voiceChannel.join()
+        .then(connection => {
+        })
+        .catch(console.log);
+    } else {
+      message.reply('يجب ان تكون في روم صوتي');
+    }
+  }
+});
+
 
 client.login(process.env.BOT_TOKEN);
